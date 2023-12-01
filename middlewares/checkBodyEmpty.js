@@ -1,9 +1,9 @@
 const {HttpError} = require("../helpers");
 
-const checkBodyEmpty = () => {
+const checkBodyEmpty = (messageError) => {
     const func = (req, res, next)=> {
         if (!Object.keys(req.body).length) {
-            throw HttpError(400, "missing fields");
+            throw HttpError(400, messageError);
         }
         next()
     }

@@ -4,6 +4,7 @@ const isValidId = require("./isValidId");
 const authenticate = require("./authenticate");
 const ownerContact = require("./ownerContact");
 const upload = require("./upload");
+const imageResize = require("./imageResize");
 
 module.exports = {
     validateBody,
@@ -12,4 +13,5 @@ module.exports = {
     authenticate,
     ownerContact,
     upload,
+    imageResize,
 }
